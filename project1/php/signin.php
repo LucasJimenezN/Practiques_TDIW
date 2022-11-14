@@ -1,7 +1,7 @@
 <?php include "header.php"; ?>
 
 <div class="container-login">
-    <form action="index.html" method="post">
+    <form action="index.php" method="post">
 
         <div class="login">
             <label for="uname"><b>Usuario</b></label>

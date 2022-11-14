@@ -1,6 +1,9 @@
 <?php include "header.php";?>
+<a href="index.php">HOME</a>
+
+
 <div class="container-login">
-    <form action="index.html" method="post">
+    <form action="index.php" method="post">
 
     <div class="login">
         <label for="uname"><b>Username</b></label>
