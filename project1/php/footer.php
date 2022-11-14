@@ -1,6 +1,6 @@
 <?php ?>
 
-</div>
+
 </main>
 
 <footer class="footer">
