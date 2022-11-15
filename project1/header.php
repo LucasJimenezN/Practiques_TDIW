@@ -1,4 +1,4 @@
-<?php include "xconfig/database.php"
+<?php include "config/database.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
