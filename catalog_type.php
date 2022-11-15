@@ -30,7 +30,9 @@ foreach ($array as $item){
     <?php foreach ($array as $items): ?>
     <ul>
         <li>
-            <?php echo "<a href=\"catalog_type.php?type=$items[type]\">"; ?> <img src="img/<?php echo $items['image'] ?>" alt="Imagen del Pokemon <?php echo $items['name'] ?>" id="typeImg"> <?php echo '</a>' ?>
+            <a href="pokemon.php?<?php echo $id=$items['id']; ?>"> <img src="img/<?php echo $items['image'] ?>" alt="Imagen del Pokemon <?php echo $items['name'] ?>"></a>
+         <!--   <?php echo "<a href=\"catalog_type.php?type=$items[type]\">"; ?> <img src="img/<?php echo $items['image'] ?>"
+                                                                                  alt="Imagen del Pokemon <?php echo $items['name'] ?>"> <?php echo '</a>' ?> -->
         </li>
         <li>
             <?php echo $items['name'] ?>
