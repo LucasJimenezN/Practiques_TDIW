@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="PublishConfigData" autoUpload="On explicit save action" serverName="TDIW" traceLevel="BRIEF" autoUploadExternalChanges="true">
     <serverData>
       <paths name="TDIW">
-=======
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="TDIW_Practiques" traceLevel="BRIEF" autoUploadExternalChanges="true">
-    <serverData>
-      <paths name="TDIW_Practiques">
->>>>>>> fb6d015226e48140c89079f2e1d5b8c5344690f4
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
