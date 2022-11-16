@@ -1,4 +1,4 @@
-<?php include "header.php";?>
+<?php include "view-header.php";?>
 <a href="index.php">HOME</a>
 
 
@@ -21,4 +21,4 @@
     </div>
     </form>
 </div>
-<?php include "footer.php"; ?>
+<?php include "view-footer.php"; ?>

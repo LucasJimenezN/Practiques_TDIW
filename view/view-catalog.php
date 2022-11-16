@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include __DIR__ . "/view/view-header.php" ?>
 
 <?php
 /*    //Array for practicing
@@ -23,26 +23,17 @@
 
 
 
-<a href="index.php">HOME</a>
+<a href="/index.php">HOME</a>
 
 <h1>Catálogo</h1>
 
-<?php 
+<?php include __DIR__ . "/controller/controller-catalog.php"; ?>
 
-    //echo "Provant connection";
-    $con = getConnection();
-    //echo "connection done";
-    $sql = 'SELECT * FROM catalog';
-    
-    $result = pg_query($con, $sql);
-
-    $array = pg_fetch_all($result);
-?>
 <div class="catalog">
     <?php foreach ($array as $items): ?>
         <ul>
             <li>
-                <?php echo "<a href=\"catalog_type.php?type=$items[type]\">"; ?> <img src="img/<?php echo $items['image'] ?>" alt="Imagen tipo <?php echo $items['name'] ?>" id="typeImg"> <?php echo '</a>' ?>
+                <?php echo "<a href=\"/catalog_type.php?type=$items[type]\">"; ?> <img src="img/<?php echo $items['image'] ?>" alt="Imagen tipo <?php echo $items['name'] ?>" id="typeImg"> <?php echo '</a>' ?>
             </li>
             <li>
                 <?php echo $items['name']; ?>
@@ -53,5 +44,5 @@
         </ul>
     <?php endforeach; ?>
 </div>
-<?php include "footer.php" ?>
+<?php include "view-footer.php" ?>
 

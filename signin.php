@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "view-header.php"; ?>
 
 <div class="container-login">
     <form action="resource_registre.php" method="post">
@@ -23,6 +23,6 @@
     </form>
 </div>
 
-<?php include "footer.php" ?>
+<?php include "view-footer.php" ?>
 
 <!-- passwordhash -->

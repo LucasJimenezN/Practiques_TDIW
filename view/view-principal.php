@@ -1,4 +1,4 @@
-<?php include "../header.php"; ?>
+<?php include "../view-header.php"; ?>
 
 <h1>Bienvenidos a PokeShop</h1>
 

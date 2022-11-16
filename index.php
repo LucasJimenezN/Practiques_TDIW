@@ -1,13 +1,13 @@
 <?php
-    include "header.php";
+    include __DIR__. "/view/view-header.php";
 ?>
 <h1>hola</h1>
 
 <?php
 $accio = $_GET['action'];
 switch ($accio) {
-    case 'categories':
-        require __DIR__.'/resources/resource_category_list.php';
+    case 'comprar':
+        require __DIR__.'/view/view-catalog.php';
         break;
     case 'productes':
         require __DIR__.'resource_llistar_productes_categoria.php';
@@ -22,12 +22,12 @@ switch ($accio) {
         require __DIR__.'resource_registre.php';
         break;
     default:
-        require __DIR__.'view/principal.php';
+        require __DIR__ . '/view/view-principal.php';
         break;
 }
 ?>
 
 
 <?php 
-    include "footer.php";
+    include "view-footer.php";
 ?>
