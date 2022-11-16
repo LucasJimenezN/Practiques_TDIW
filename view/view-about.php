@@ -1,4 +1,3 @@
-<?php include "view-header.php" ?>
 
 <a href="../index.php">HOME</a>
 

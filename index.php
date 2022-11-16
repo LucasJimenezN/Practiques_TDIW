@@ -1,25 +1,27 @@
 <?php
     include __DIR__. "/view/view-header.php";
 ?>
-<h1>hola</h1>
 
 <?php
 $accio = $_GET['action'];
 switch ($accio) {
     case 'comprar':
-        require __DIR__.'/view/view-catalog.php';
+        require __DIR__.'/controller/controller-catalog.php';
         break;
-    case 'productes':
-        require __DIR__.'resource_llistar_productes_categoria.php';
+    case 'nosotros':
+        require __DIR__.'/controller/controller-about-us.php';
         break;
-    case 'producte':
-        require __DIR__.'resource_detall_producte.php';
+    case 'entrada': //entrada es login, pero al pasar action=login no lo pillaba.
+        require __DIR__.'/view/view-login.php';
         break;
-    case 'login':
-        require __DIR__.'resource_login.php';
+    case 'registrarse': //registre es signup
+        require __DIR__.'/view/view-signup.php';
         break;
-    case 'signin':
-        require __DIR__.'resource_registre.php';
+    case 'typepokemons':
+        require __DIR__. "/controller/controller-catalog-type.php";
+        break;
+    case 'pokemon':
+        require __DIR__. "/controller/controller-pokemon.php";
         break;
     default:
         require __DIR__ . '/view/view-principal.php';

@@ -19,9 +19,9 @@
     </div>
     <ul class="nav-links">
         <div class="menu">
-            <li><a href="view-catalog.php">Comprar</a></li>
-            <li><a href="view-about.php">Sobre nosotros</a></li>
-            <li><a href="../login.php">Login</a></li>
+            <li><a href="/../index.php?action=comprar">Comprar</a></li>
+            <li><a href="/../index.php?action=nosotros">Sobre nosotros</a></li>
+            <li><a href="/../index.php?action=entrada">Login</a></li>
         </div>
     </ul>
 </nav>

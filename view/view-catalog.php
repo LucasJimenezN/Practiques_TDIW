@@ -1,4 +1,3 @@
-<?php include __DIR__ . "/view/view-header.php" ?>
 
 <?php
 /*    //Array for practicing
@@ -21,19 +20,16 @@
 */
 ?>
 
-
-
 <a href="/index.php">HOME</a>
 
 <h1>Catálogo</h1>
 
-<?php include __DIR__ . "/controller/controller-catalog.php"; ?>
 
 <div class="catalog">
     <?php foreach ($array as $items): ?>
         <ul>
             <li>
-                <?php echo "<a href=\"/catalog_type.php?type=$items[type]\">"; ?> <img src="img/<?php echo $items['image'] ?>" alt="Imagen tipo <?php echo $items['name'] ?>" id="typeImg"> <?php echo '</a>' ?>
+                <a href="../index.php?itemID=<?php echo $items[type] ?>&action=typepokemons"> <img src="../img/<?php echo $items['image'] ?>" alt="Imagen tipo <?php echo $items['name'] ?>" id="typeImg"> <?php echo '</a>' ?>
             </li>
             <li>
                 <?php echo $items['name']; ?>

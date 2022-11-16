@@ -1,7 +1,8 @@
-<?php include "view-header.php"; ?>
+
+
 
 <div class="container-login">
-    <form action="resource_registre.php" method="post">
+    <form action="../controller/controller-signup.php" method="post">
 
         <div class="singin">
             <label for="uname"><b>Usuario</b></label>

@@ -1,9 +1,9 @@
-<?php include "view-header.php";?>
-<a href="index.php">HOME</a>
+<a href="../index.php">HOME</a>
 
+<h1>Hola q tal</h1>
 
 <div class="container-login">
-    <form action="resource_login.php" method="post">
+    <form action="../controller/controller-login.php" method="post">
 
     <div class="login">
         <label for="uname"><b>Username</b></label>
@@ -17,7 +17,7 @@
 
     <div class="no-login">
         <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw"><a href="signin.php">No tienes cuenta?</a></span>
+        <span class="psw"><a href="/../index.php?action=registrarse">No tienes cuenta?</a></span>
     </div>
     </form>
 </div>

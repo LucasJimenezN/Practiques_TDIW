@@ -1,5 +1,4 @@
-<?php include "database.php";
-
+<?php
 function comprobation($conn){
 $password = $_POST['psw'];
 

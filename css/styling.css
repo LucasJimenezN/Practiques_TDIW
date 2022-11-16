@@ -127,3 +127,7 @@ input[type=text], input[type=password], input[type=email] {
 .pokemon img{
     width: 50px;
 }
+
+.pok_item img{
+    width: 100px;
+}

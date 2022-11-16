@@ -1,5 +1,4 @@
 <?php
-
 include __DIR__. "/../model/database.php";
 
 //echo "Provant connection";
@@ -10,5 +9,7 @@ $sql = 'SELECT * FROM catalog';
 $result = pg_query($con, $sql);
 
 $array = pg_fetch_all($result);
+
+include __DIR__. "/../view/view-catalog.php";
 
 ?>

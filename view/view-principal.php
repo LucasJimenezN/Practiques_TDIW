@@ -4,4 +4,3 @@
 
 <p>Porfavor seleccione una opcion en la barra para continuar.  </p>
 
-<p>Hola mon</p>
