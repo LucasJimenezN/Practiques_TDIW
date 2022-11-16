@@ -3,7 +3,7 @@
 
 
 <div class="container-login">
-    <form action="index.php" method="post">
+    <form action="resource_login.php" method="post">
 
     <div class="login">
         <label for="uname"><b>Username</b></label>
