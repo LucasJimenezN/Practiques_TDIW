@@ -14,9 +14,10 @@ $con = getConnection();
 //echo "connection done";
 $t = $_GET['type'];
 //echo $t;
-$sql = "SELECT * FROM items WHERE type=$t";
+$sql = "SELECT * FROM items WHERE type=$1";
+$params = [$t];
 //echo "hola";
-$result = pg_query($con, $sql);
+$result = pg_query_params($con, $sql, $params);
 
 $array = pg_fetch_all($result);
 

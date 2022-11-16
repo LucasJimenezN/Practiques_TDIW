@@ -1,27 +1,28 @@
 <?php
     include "header.php";
 ?>
+<h1>hola</h1>
 
 <?php
 $accio = $_GET['action'];
 switch ($accio) {
     case 'categories':
-        require DIR.'/resources/resource_category_list.php';
+        require __DIR__.'/resources/resource_category_list.php';
         break;
     case 'productes':
-        require DIR.'resource_llistar_productes_categoria.php';
+        require __DIR__.'resource_llistar_productes_categoria.php';
         break;
     case 'producte':
-        require DIR.'resource_detall_producte.php';
+        require __DIR__.'resource_detall_producte.php';
         break;
     case 'login':
-        require DIR.'resource_login.php';
+        require __DIR__.'resource_login.php';
         break;
-    case 'registre':
-        require DIR.'resource_registre.php';
+    case 'signin':
+        require __DIR__.'resource_registre.php';
         break;
     default:
-        require DIR.'view/principal.php';
+        require __DIR__.'view/principal.php';
         break;
 }
 ?>
