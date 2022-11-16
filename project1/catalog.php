@@ -1,7 +1,8 @@
 <?php include "header.php" ?>
 
 <?php
-    //Array for practicing
+/*    //Array for practicing
+
     $example = [
         [
             "name" => "fire",
@@ -17,7 +18,7 @@
         ]
         ];
 
-
+*/
 ?>
 
 
@@ -28,36 +29,29 @@
 
 <?php 
 
-    echo "Provant connection";
+    //echo "Provant connection";
     $con = getConnection();
-    echo "connection done";
+    //echo "connection done";
     $sql = 'SELECT * FROM catalog';
     
     $result = pg_query($con, $sql);
 
     $array = pg_fetch_all($result);
-    
-    foreach($example as $values) {
-        echo $values['name'] . "\n";
-    }
-
-
-
 ?>
-
-<!-- <?php foreach($example as $values): ?>
-    <ul>
-        <il> 
-            <?php echo $values['name']; ?> <br>
-            <?php echo $values['desc']; ?> <br>
-            <a href="catalog_type0.php" onclick="location.href=this.href+$values['type']">
-             <?php echo $values['img']; ?> <br>
-            </a>
-
-        </il>
-    </ul>
-<?php endforeach ?> -->
-<h1>Bye</h1>
-
+<div class="catalog">
+    <?php foreach ($array as $items): ?>
+        <ul>
+            <li>
+                <?php echo "<a href=\"catalog_type.php?type=$items[type]\">"; ?> <?php echo img/$items['image'] ?> <?php echo '</a>' ?>
+            </li>
+            <li>
+                <?php echo $items['name']; ?>
+            </li>
+            <li>
+                <?php echo $items['description']; ?>
+            </li>
+        </ul>
+    <?php endforeach; ?>
+</div>
 <?php include "footer.php" ?>
 

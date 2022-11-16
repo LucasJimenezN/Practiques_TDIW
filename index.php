@@ -6,6 +6,7 @@
 
 <p>Porfavor seleccione una opcion en la barra para continuar.  </p>
 
+<<<<<<< HEAD
 <?php
 $accio = $_GET['action'];
 switch ($accio) {
@@ -29,6 +30,9 @@ switch ($accio) {
         break;
 }
 ?>
+=======
+<p>Bueno dia gente</p>
+>>>>>>> fb6d015226e48140c89079f2e1d5b8c5344690f4
 
 
 
