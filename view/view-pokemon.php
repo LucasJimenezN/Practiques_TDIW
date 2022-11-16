@@ -5,7 +5,7 @@
                 <img src="../img/<?php echo $items['image'] ?>" alt="Imagen del Pokemon <?php echo $items['name'] ?>">
             </li>
             <li>
-                <h3> <?php echo $items['name'] ?> </h3>
+                <h1> <?php echo $items['name'] ?> </h1>
             </li>
             <li>
                 <p> <?php echo $items['description'] ?></p>

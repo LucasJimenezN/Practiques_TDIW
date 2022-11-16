@@ -121,13 +121,13 @@ input[type=text], input[type=password], input[type=email] {
 }
 
 .catalog img{
-    width: 50px;
+    width: 75px;
 }
 
 .pokemon img{
-    width: 50px;
+    width: 150px;
 }
 
 .pok_item img{
-    width: 100px;
+    width: 300px;
 }

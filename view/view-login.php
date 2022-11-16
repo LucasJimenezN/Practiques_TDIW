@@ -1,6 +1,5 @@
 <a href="../index.php">HOME</a>
 
-<h1>Hola q tal</h1>
 
 <div class="container-login">
     <form action="../controller/controller-login.php" method="post">
